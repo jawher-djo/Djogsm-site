@@ -1,48 +1,8 @@
 <!doctype html>
-<html lang="fr">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="DJO GSM Manouba — accessoires téléphone, récepteurs, streaming et services Orange. Commandez sur WhatsApp.">
-<title>DJO GSM | Manouba</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header class="top">
-  <a class="brand" href="#"><span class="mark">DJO</span><span>GSM<small>MANOUBA</small></span></a>
-  <button class="menu" id="menuBtn" aria-label="Ouvrir le menu">☰</button>
-  <nav id="nav"><a href="#accueil">Accueil</a><a href="#categories">Catégories</a><a href="#produits">Produits</a><a href="#services">Services</a><a href="#contact">Contact</a></nav>
-  <button class="cartBtn" id="cartOpen">Panier <b id="cartCount">0</b></button>
-</header>
-<main>
-<section class="hero" id="accueil">
-  <div class="heroText"><p class="eyebrow">DJO GSM • MANOUBA</p><h1>La technologie<br><em>à portée de main.</em></h1>
-  <p>Accessoires téléphone, récepteurs, streaming et services télécoms. Découvrez nos produits et commandez facilement sur WhatsApp.</p>
-  <div class="actions"><a class="btn primary" href="#produits">Découvrir les produits</a><a class="btn ghost" href="https://wa.me/21655534713" target="_blank" rel="noopener">WhatsApp</a></div>
-  </div>
-  <div class="heroArt"><div class="orb"></div><div class="device">DJO<span>GSM</span><small>SMART • SIMPLE • CONNECTÉ</small></div><div class="float f1">ACCESSOIRES</div><div class="float f2">STREAMING</div></div>
-</section>
-<section class="trust"><div><b>📍</b><span><strong>Manouba</strong><small>Retrouvez-nous en magasin</small></span></div><div><b>💬</b><span><strong>Commande WhatsApp</strong><small>Simple et rapide</small></span></div><div><b>🛍️</b><span><strong>Retrait en magasin</strong><small>Selon disponibilité</small></span></div></section>
-<section class="section" id="categories"><div class="sectionHead"><div><p class="eyebrow">EXPLOREZ</p><h2>Nos catégories</h2></div><p>Tout ce qu’il vous faut, au même endroit.</p></div>
-<div class="catGrid">
-<button class="cat active" data-filter="all"><span>✦</span><b>Tout voir</b></button>
-<button class="cat" data-filter="accessoires"><span>🎧</span><b>Accessoires téléphone</b></button>
-<button class="cat" data-filter="recepteurs"><span>📡</span><b>Récepteurs</b></button>
-<button class="cat" data-filter="streaming"><span>▶</span><b>Streaming</b></button>
-<button class="cat" data-filter="orange"><span>🟠</span><b>Services Orange</b></button>
-</div></section>
-<section class="section products" id="produits"><div class="sectionHead"><div><p class="eyebrow">NOTRE SÉLECTION</p><h2>Produits & services</h2></div><input id="search" type="search" placeholder="Rechercher un produit…"></div>
-<div class="productGrid" id="productGrid"></div>
-<p class="hint">Les produits et prix affichés sont des exemples à remplacer par votre catalogue réel.</p>
-</section>
-<section class="services section" id="services"><p class="eyebrow">DJO GSM</p><h2>Plus qu’une boutique.</h2><div class="serviceGrid">
-<article><span>📱</span><h3>Accessoires téléphone</h3><p>Chargeurs, câbles, écouteurs, haut-parleurs et plus.</p></article>
-<article><span>📡</span><h3>Service récepteur</h3><p>Vente et services liés aux récepteurs, selon disponibilité.</p></article>
-<article><span>▶</span><h3>Service streaming</h3><p>Informations et accompagnement pour les offres disponibles.</p></article>
-<article><span>🟠</span><h3>Services Orange</h3><p>Recharge, forfaits et services télécoms.</p></article>
-</div></section>
-<section class="contact section" id="contact"><div><p class="eyebrow">BESOIN D’UN RENSEIGNEMENT ?</p><h2>On est à votre écoute.</h2><p>Contactez DJO GSM pour vérifier la disponibilité ou passer votre commande.</p></div><a class="btn primary" href="https://wa.me/21655534713" target="_blank" rel="noopener">Contacter sur WhatsApp ↗</a></section>
-</main>
-<footer><a class="brand" href="#"><span class="mark">DJO</span><span>GSM<small>MANOUBA</small></span></a><p>© <span id="year"></span> DJO GSM — Manouba. Tous droits réservés.</p><a href="https://wa.me/21655534713">+216 55 534 713</a></footer>
-<div class="overlay" id="overlay"></div><aside class="cart" id="cart"><div class="cartHead"><h2>Votre panier</h2><button id="cartClose" aria-label="Fermer">✕</button></div><div id="cartItems" class="cartItems"><p class="empty">Votre panier est vide.</p></div><div class="cartFoot"><div class="total"><span>Total estimé</span><strong id="total">0 DT</strong></div><button class="btn primary full" id="checkout">Commander sur WhatsApp</button><small>La commande sera envoyée sur WhatsApp. Le prix et la disponibilité seront confirmés par DJO GSM.</small></div></aside>
-<script src="app.js"></script>
-</body></html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Administration | DJO GSM</title><link rel="stylesheet" href="admin.css"></head>
+<body><main class="wrap"><header><a href="/" class="brand">DJO <b>GSM</b></a><span>ESPACE ADMINISTRATION</span></header>
+<section id="loginBox" class="panel"><h1>Connexion Admin</h1><p>Connectez-vous avec le compte administrateur DJO GSM.</p><form id="loginForm"><label>Email<input id="email" type="email" required autocomplete="username"></label><label>Mot de passe<input id="password" type="password" required autocomplete="current-password"></label><button>Se connecter</button><p id="loginMsg" class="msg"></p></form></section>
+<section id="adminBox" class="panel" hidden><div class="bar"><div><h1>Gestion des produits</h1><p>Ajouter, modifier ou supprimer les produits du catalogue.</p></div><button id="logout" class="secondary">Déconnexion</button></div>
+<form id="productForm" class="productForm"><input id="productId" type="hidden"><label>Nom du produit<input id="name" required></label><label>Catégorie<select id="category"><option value="accessoires">Accessoires téléphone</option><option value="recepteurs">Récepteurs</option><option value="streaming">Streaming</option><option value="orange">Services Orange</option></select></label><label>Prix (DT)<input id="price" type="number" min="0" step="0.01" required></label><label>Description<textarea id="description" rows="2"></textarea></label><label>Photo du produit<input id="image" type="file" accept="image/*"></label><div id="preview"></div><div class="actions"><button id="saveBtn">Enregistrer le produit</button><button type="button" id="cancel" class="secondary">Annuler</button></div><p id="formMsg" class="msg"></p></form>
+<h2>Catalogue en ligne</h2><div id="items" class="items"></div></section></main>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="admin.js"></script></body></html>
